@@ -1,0 +1,380 @@
+/* GLOBAL STYLING */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdfefe;
+}
+
+/* STYLING FOR THE TOP HEADER & MAIN MENU */
+
+.main-header {
+  display: grid;
+  margin: 1rem auto;
+  width: 70%;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 10% 28% auto 30%;
+  grid-gap: 10px;
+  grid-column-gap: 20px;
+  padding: 1em 0;
+  color: #2e2e2e;
+}
+
+.img-container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: end;
+}
+
+.main-header img {
+  margin: 0 0.4em 0 0;
+  height: 25px;
+  border-radius: 50%;
+}
+
+#avatar {
+  height: 50px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  width: auto;
+  min-height: 150px;
+  background-color: #333;
+  justify-self: end;
+}
+
+.main-header > h1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: flex-end;
+  font-weight: 100;
+}
+
+.main-header > p {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-weight: 100;
+}
+
+#menu {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#menu ul {
+  display: flex;
+  list-style: none;
+}
+
+#menu li {
+  padding: 0.6em 0;
+  text-align: center;
+  width: 100%;
+  height: 2.3em;
+  margin-right: 1em;
+  border-radius: 3px;
+  background-color: #a6a8b4;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.menu-link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
+
+#menu li:hover {
+  background-color: #7b7d86;
+}
+
+/* STYLING FOR THE PORTFOLIO MENU */
+
+#portfolio-menu {
+  border-top: 1px solid #a6a8b4;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#portfolio-menu ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+#portfolio-menu li {
+  margin: auto 1em;
+}
+
+.portfolio-link {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
+  font-weight: 600;
+}
+
+/* STYLING FOR THE IMAGE GALLERY */
+
+.gallery-section {
+  width: 70%;
+  margin: 3rem auto;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+/* DESIGNER & DEVELOPER SECTION */
+
+#designer-developer-gallery {
+  display: none; /* normally grid */
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem;
+}
+
+.gallery-item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery-item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery-item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery-item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.gallery-item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.gallery-item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/* ARTIST & ILLUSTRATOR SECTION */
+
+#artist-gallery {
+  display: grid; /* normally grid */
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(16, 7vw);
+  grid-gap: 1.5rem;
+}
+
+.artist-gallery-item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.artist-gallery-item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.artist-gallery-item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.artist-gallery-item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+.artist-gallery-item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 12;
+}
+
+.artist-gallery-item--6 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.artist-gallery-item--7 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.artist-gallery-item--8 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 8;
+  grid-row-end: 13;
+}
+
+.artist-gallery-item--9 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 12;
+  grid-row-end: 16;
+}
+
+.artist-gallery-item--10 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 13;
+  grid-row-end: 17;
+}
+
+/* DANCER SECTION */
+
+#dancer-gallery {
+  display: none; /* normally grid */
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1.5rem;
+}
+
+.gallery-item--1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery-item--2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery-item--3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gallery-item--4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.gallery-item--5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.gallery-item--6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.gallery-item--7 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.gallery-item--8 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.gallery-item--9 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* STYLING THE TOOLTIP */
+
+.tooltip {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-size: 16px;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  color: #a6a8b4;
+  border-radius: 3px;
+  top: -25px;
+  left: -45px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

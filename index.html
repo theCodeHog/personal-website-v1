@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paola Tosca Art</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="img-container">
+        <a href="https://github.com/theCodeHog" target="_blank" class="tooltip">
+          <img src="images/github-logo1.svg" alt="github" />
+          <span class="tooltiptext">Github</span>
+        </a>
+        <a href="https://www.instagram.com/paolatoscaart" target="_blank" class="tooltip"
+          ><img src="images/instagram-logo.png" alt="instagram" />
+          <span class="tooltiptext">Instagram</span></a
+        >
+        <a href="https://www.linkedin.com/in/paolatosca" target="_blank" class="tooltip"
+          ><img src="images/linkedin-logo.jpg" alt="linkedin" />
+          <span class="tooltiptext">LinkedIn</span></a
+        >
+      </div>
+      <img id="avatar" src="images/avatar.jpg" alt="avatar" />
+      <h1>Paola Tosca van den Bor</h1>
+      <p>
+        Born in the Netherlands, raised in the Caribbean, living in Sweden.
+      </p>
+      <nav id="menu">
+        <ul>
+          <li><a href="#" class="menu-link">About Me</a></li>
+          <li><a href="#" class="menu-link">For You</a></li>
+          <li><a href="#" class="menu-link">Available Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav id="portfolio-menu">
+      <ul>
+        <li>
+          <a
+            href="#"
+            class="portfolio-link designer-developer"
+            onclick="showGallery('designer-developer-gallery')"
+            >Designer & Developer
+          </a>
+        </li>
+        |
+        <li>
+          <a
+            href="#"
+            class="portfolio-link artist"
+            onclick="showGallery('artist-gallery')"
+            >Illustrator & Comic Artist</a
+          >
+        </li>
+        |
+        <li>
+          <a
+            href="#"
+            class="portfolio-link dancer"
+            onclick="showGallery('dancer-gallery')"
+            >Dancer</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section class="gallery-section">
+      <div id="designer-developer-gallery">
+        <figure class="gallery-item gallery-item--1">
+          <img src="#" class="gallery-img" alt="Image 1" />
+        </figure>
+        <figure class="gallery-item gallery-item--2">
+          <img src="#" class="gallery-img" alt="Image 2" />
+        </figure>
+        <figure class="gallery-item gallery-item--3">
+          <img src="#" class="gallery-img" alt="Image 3" />
+        </figure>
+        <figure class="gallery-item gallery-item--4">
+          <img src="#" class="gallery-img" alt="Image 4" />
+        </figure>
+        <figure class="gallery-item gallery-item--5">
+          <img src="#" class="gallery-img" alt="Image 5" />
+        </figure>
+        <figure class="gallery-item gallery-item--6">
+          <img src="#" class="gallery-img" alt="Image 6" />
+        </figure>
+      </div>
+
+      <div id="artist-gallery">
+        <figure class="gallery-item artist-gallery-item--1">
+          <img
+            src="images/illustrator-artist/13.jpg"
+            class="gallery-img"
+            alt="Image 1"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--2">
+          <img
+            src="images/illustrator-artist/7.jpg"
+            class="gallery-img"
+            alt="Image 2"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--3">
+          <img
+            src="images/illustrator-artist/1.jpg"
+            class="gallery-img"
+            alt="Image 3"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--4">
+          <img
+            src="images/illustrator-artist/2.jpg"
+            class="gallery-img"
+            alt="Image 4"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--5">
+          <img
+            src="images/illustrator-artist/11.jpg"
+            class="gallery-img"
+            alt="Image 5"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--6">
+          <img
+            src="images/illustrator-artist/10.jpg"
+            class="gallery-img"
+            alt="Image 6"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--7">
+          <img
+            src="images/illustrator-artist/12.jpg"
+            class="gallery-img"
+            alt="Image 7"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--8">
+          <img
+            src="images/illustrator-artist/14.jpg"
+            class="gallery-img"
+            alt="Image 8"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--9">
+          <img
+            src="images/illustrator-artist/6.jpg"
+            class="gallery-img"
+            alt="Image 9"
+          />
+        </figure>
+        <figure class="gallery-item artist-gallery-item--10">
+          <img
+            src="images/illustrator-artist/4.jpg"
+            class="gallery-img"
+            alt="Image 9"
+          />
+        </figure>
+      </div>
+
+      <div id="dancer-gallery">
+        <figure class="gallery-item gallery-item--1">
+          <img src="images/dancer/4.jpg" class="gallery-img" alt="Image 1" />
+        </figure>
+        <figure class="gallery-item gallery-item--2">
+          <img src="images/dancer/1.jpg" class="gallery-img" alt="Image 2" />
+        </figure>
+        <figure class="gallery-item gallery-item--3">
+          <img src="images/dancer/3.jpg" class="gallery-img" alt="Image 3" />
+        </figure>
+        <figure class="gallery-item gallery-item--4">
+          <img src="images/dancer/9.jpg" class="gallery-img" alt="Image 4" />
+        </figure>
+        <figure class="gallery-item gallery-item--5">
+          <img src="images/dancer/5.jpg" class="gallery-img" alt="Image 5" />
+        </figure>
+        <figure class="gallery-item gallery-item--6">
+          <img src="images/dancer/6.jpg" class="gallery-img" alt="Image 6" />
+        </figure>
+        <figure class="gallery-item gallery-item--7">
+          <img src="images/dancer/7.jpg" class="gallery-img" alt="Image 7" />
+        </figure>
+        <figure class="gallery-item gallery-item--8">
+          <img src="images/dancer/8.jpg" class="gallery-img" alt="Image 8" />
+        </figure>
+        <figure class="gallery-item gallery-item--9">
+          <img src="images/dancer/2.jpg" class="gallery-img" alt="Image 9" />
+        </figure>
+      </div>
+    </section>
+  </body>
+  <script src="main.js"></script>
+</html>
