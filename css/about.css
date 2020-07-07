@@ -1,0 +1,17 @@
+/* ABOUT ME STYLING */
+
+.about-me {
+  display: grid;
+  border-top: 1px solid #a6a8b4;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-me h1 {
+  margin: 10px;
+}
+
+.about-me p {
+  font-size: 14px;
+  line-height: 24px;
+}

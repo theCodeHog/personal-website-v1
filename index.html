@@ -9,7 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/1daf33fe87.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <header class="main-header">
       <div class="img-container">
@@ -17,11 +22,17 @@
           <img src="images/github-logo1.svg" alt="github" />
           <span class="tooltiptext">Github</span>
         </a>
-        <a href="https://www.instagram.com/paolatoscaart" target="_blank" class="tooltip"
+        <a
+          href="https://www.instagram.com/paolatoscaart"
+          target="_blank"
+          class="tooltip"
           ><img src="images/instagram-logo.png" alt="instagram" />
           <span class="tooltiptext">Instagram</span></a
         >
-        <a href="https://www.linkedin.com/in/paolatosca" target="_blank" class="tooltip"
+        <a
+          href="https://www.linkedin.com/in/paolatosca"
+          target="_blank"
+          class="tooltip"
           ><img src="images/linkedin-logo.jpg" alt="linkedin" />
           <span class="tooltiptext">LinkedIn</span></a
         >
@@ -33,9 +44,11 @@
       </p>
       <nav id="menu">
         <ul>
-          <li><a href="#" class="menu-link">About Me</a></li>
-          <li><a href="#" class="menu-link">For You</a></li>
-          <li><a href="#" class="menu-link">Buy Now</a></li>
+          <li><a href="about.html" class="menu-link">About Me</a></li>
+          <li><a href="services.html" class="menu-link">For You</a></li>
+          <li>
+            <a href="index.html" class="menu-link last-button">Gallery</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -47,25 +60,24 @@
             href="#"
             class="portfolio-link designer-developer"
             onclick="showGallery('designer-developer-gallery')"
-            >Designer & Developer
+            >Designer & Developer <span class="hidden-on-mobile">|</span>
           </a>
         </li>
-        |
         <li>
           <a
             href="#"
             class="portfolio-link artist"
             onclick="showGallery('artist-gallery')"
-            >Illustrator & Comic Artist</a
+            >Illustrator & Comic Artist
+            <span class="hidden-on-mobile">|</span></a
           >
         </li>
-        |
         <li>
           <a
             href="#"
             class="portfolio-link dancer"
             onclick="showGallery('dancer-gallery')"
-            >Dancer</a
+            >Hobbies</a
           >
         </li>
       </ul>
@@ -73,24 +85,40 @@
 
     <section class="gallery-section">
       <div id="designer-developer-gallery">
-        <h2>Work in Progress!</h2>
-        <figure class="gallery-item gallery-item--1">
-          <img src="#" class="gallery-img" alt="Image 1" />
+        <figure class="gallery-item designer-gallery-item--1">
+          <img
+            src="images/designer-developer/1.jpg"
+            class="gallery-img"
+            alt="Designer & Developer Image 1"
+          />
         </figure>
-        <figure class="gallery-item gallery-item--2">
-          <img src="#" class="gallery-img" alt="Image 2" />
+        <figure class="gallery-item designer-gallery-item--2">
+          <img
+            src="images/designer-developer/2.jpg"
+            class="gallery-img"
+            alt="Designer & Developer Image 2"
+          />
         </figure>
-        <figure class="gallery-item gallery-item--3">
-          <img src="#" class="gallery-img" alt="Image 3" />
+        <figure class="gallery-item designer-gallery-item--3">
+          <img
+            src="images/designer-developer/3.jpg"
+            class="gallery-img"
+            alt="Designer & Developer Image 3"
+          />
         </figure>
-        <figure class="gallery-item gallery-item--4">
-          <img src="#" class="gallery-img" alt="Image 4" />
+        <figure class="gallery-item designer-gallery-item--4">
+          <img
+            src="images/designer-developer/5.jpg"
+            class="gallery-img"
+            alt="Designer & Developer Image 4"
+          />
         </figure>
-        <figure class="gallery-item gallery-item--5">
-          <img src="#" class="gallery-img" alt="Image 5" />
-        </figure>
-        <figure class="gallery-item gallery-item--6">
-          <img src="#" class="gallery-img" alt="Image 6" />
+        <figure class="gallery-item designer-gallery-item--5">
+          <img
+            src="images/designer-developer/8.jpg"
+            class="gallery-img"
+            alt="Designer & Developer Image 5"
+          />
         </figure>
       </div>
 
@@ -99,104 +127,144 @@
           <img
             src="images/illustrator-artist/13.jpg"
             class="gallery-img"
-            alt="Image 1"
+            alt="Illustration image 1"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--2">
           <img
             src="images/illustrator-artist/7.jpg"
             class="gallery-img"
-            alt="Image 2"
+            alt="Illustration image 2"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--3">
           <img
             src="images/illustrator-artist/1.jpg"
             class="gallery-img"
-            alt="Image 3"
+            alt="Illustration image 3"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--4">
           <img
             src="images/illustrator-artist/2.jpg"
             class="gallery-img"
-            alt="Image 4"
+            alt="Illustration image 4"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--5">
           <img
             src="images/illustrator-artist/11.jpg"
             class="gallery-img"
-            alt="Image 5"
+            alt="Illustration image 5"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--6">
           <img
             src="images/illustrator-artist/10.jpg"
             class="gallery-img"
-            alt="Image 6"
+            alt="Illustration image 6"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--7">
           <img
             src="images/illustrator-artist/12.jpg"
             class="gallery-img"
-            alt="Image 7"
+            alt="Illustration image 7"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--8">
           <img
             src="images/illustrator-artist/14.jpg"
             class="gallery-img"
-            alt="Image 8"
+            alt="Illustration image 8"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--9">
           <img
             src="images/illustrator-artist/6.jpg"
             class="gallery-img"
-            alt="Image 9"
+            alt="Illustration image 9"
           />
         </figure>
         <figure class="gallery-item artist-gallery-item--10">
           <img
             src="images/illustrator-artist/4.jpg"
             class="gallery-img"
-            alt="Image 9"
+            alt="Illustration image 9"
           />
         </figure>
       </div>
 
       <div id="dancer-gallery">
         <figure class="gallery-item gallery-item--1">
-          <img src="images/dancer/4.jpg" class="gallery-img" alt="Image 1" />
+          <img
+            src="images/dancer/4.jpg"
+            class="gallery-img"
+            alt="Dance image 1"
+          />
         </figure>
         <figure class="gallery-item gallery-item--2">
-          <img src="images/dancer/1.jpg" class="gallery-img" alt="Image 2" />
+          <img
+            src="images/dancer/1.jpg"
+            class="gallery-img"
+            alt="Dance image 2"
+          />
         </figure>
         <figure class="gallery-item gallery-item--3">
-          <img src="images/dancer/3.jpg" class="gallery-img" alt="Image 3" />
+          <img
+            src="images/dancer/3.jpg"
+            class="gallery-img"
+            alt="Dance image 3"
+          />
         </figure>
         <figure class="gallery-item gallery-item--4">
-          <img src="images/dancer/9.jpg" class="gallery-img" alt="Image 4" />
+          <img
+            src="images/dancer/9.jpg"
+            class="gallery-img"
+            alt="Dance image 4"
+          />
         </figure>
         <figure class="gallery-item gallery-item--5">
-          <img src="images/dancer/5.jpg" class="gallery-img" alt="Image 5" />
+          <img
+            src="images/dancer/5.jpg"
+            class="gallery-img"
+            alt="Dance image 5"
+          />
         </figure>
         <figure class="gallery-item gallery-item--6">
-          <img src="images/dancer/6.jpg" class="gallery-img" alt="Image 6" />
+          <img
+            src="images/dancer/6.jpg"
+            class="gallery-img"
+            alt="Dance image 6"
+          />
         </figure>
         <figure class="gallery-item gallery-item--7">
-          <img src="images/dancer/7.jpg" class="gallery-img" alt="Image 7" />
+          <img
+            src="images/dancer/7.jpg"
+            class="gallery-img"
+            alt="Dance image 7"
+          />
         </figure>
         <figure class="gallery-item gallery-item--8">
-          <img src="images/dancer/8.jpg" class="gallery-img" alt="Image 8" />
+          <img
+            src="images/dancer/8.jpg"
+            class="gallery-img"
+            alt="Dance image 8"
+          />
         </figure>
         <figure class="gallery-item gallery-item--9">
-          <img src="images/dancer/2.jpg" class="gallery-img" alt="Image 9" />
+          <img
+            src="images/dancer/2.jpg"
+            class="gallery-img"
+            alt="Dance image 9"
+          />
         </figure>
       </div>
     </section>
+    <footer>
+      © Paola Tosca Art 2020
+    </footer>
   </body>
+
   <script src="main.js"></script>
 </html>

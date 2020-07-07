@@ -1,0 +1,91 @@
+/* SERVICES STYLING */
+
+.services {
+  display: grid;
+  border-top: 1px solid #a6a8b4;
+  padding: 20px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.services h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+.services h3 {
+  line-height: 1.8rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.radio-buttons {
+  text-align: center;
+}
+
+.radio-button {
+  margin-right: 10px;
+}
+
+input {
+  display: inline-block;
+  padding: 7px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+  padding: 7px;
+}
+
+.submit-button {
+  margin-top: 10px;
+  background-color: #3c3d42;
+  color: white;
+  border: none;
+  height: 40px;
+  font-size: 16px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #7b7d86;
+}
+
+.radio-buttons,
+textarea,
+p {
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .services h3, label {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  label {
+    font-weight: 400;
+  }
+
+  p{
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .services h3, label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  p{
+    font-size: 12px;
+  }
+}
